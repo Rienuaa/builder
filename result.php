@@ -9,8 +9,8 @@
 		<b><font size = "6">A Clean Build</font></b>
 		<p>A potentially open-source offline larp character building platform. @Rienuaa on twitter and github. This is a glorified php form with some light hackery. VERY WIP</p>
 		
-		Player Name: <?php echo $_POST["playername"]; ?><br>
-		Header: <?php echo $_POST["header"]; ?>
+		Player Name: <?php echo $_GET["playername"]; ?><br>
+		Header: <?php echo $_GET["header"]; ?>
 		
 		
 <script type="text/javascript" src="builder.js"></script></body></html>
