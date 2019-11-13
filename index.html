@@ -7,27 +7,43 @@
 	</head>
 	<body>
 		<b><font size = "6">A Clean Build</font></b>
-		<p>A potentially open-source offline larp character building platform. @Rienuaa on twitter and github. This is a glorified php form with some light hackery. VERY WIP</p>
+		<p>@Rienuaa on twitter and github. VERY WIP</p>
 		
-		<form action = "result.php" method = "get">
-		<p>Player Name: <input type="text" name="playername"><br>
-		<select name="header">
-			<option value="header1">Header 1</option>
-			<option value="header2">Header 2</option>
-			<option value="header3">Header 3</option>
-			<option value="header4">Header 4</option>
-		</select>
-		<select name="culture">
-			<option value="culture1">Culture 1</option>
-			<option value="culture2">Culture 2</option>
-			<option value="culture3">Culture 3</option>
-			<option value="culture4">Culture 4</option>
-		</select><br>
-		<input type="checkbox" name="headerability1" value="headerability1" checked disabled>Default Header Ability<br>
-		<input type="checkbox" name="headerability2" value="headerability2">Header Ability 2<br>
-		<input type="checkbox" name="headerability3" value="headerability3">Header Ability 3<br><br>
-		<hr>
-		</form>
+		<table style = "width:100%">
+		<tr>
+		<td style = "width:50%">
+			<form>
+			<p>Player Name: <input type="text" name="playername" id = "playername"><br>
+			<select id = "header">
+				<option value="header1 longname">Header 1</option>
+				<option value="header2 longname">Header 2</option>
+				<option value="header3 longname">Header 3</option>
+				<option value="header4 longname">Header 4</option>
+			</select>
+			<select id = "culture">
+				<option value="culture1 longname">Culture 1</option>
+				<option value="culture2 longname">Culture 2</option>
+				<option value="culture3 longname">Culture 3</option>
+				<option value="culture4 longname">Culture 4</option>
+			</select><br>
+			<input type="checkbox" id = "headerability1" value="headerability1" checked disabled>Default Header Ability<br>
+			<input type="checkbox" id = "headerability2" value="headerability2">Header Ability 2<br>
+			<input type="checkbox" id = "headerability3" value="headerability3">Header Ability 3<br><br>
+			<hr>
+			</form>
+			<input type="submit" onclick="display();"><br/>
+			</div>
+		</td>
+		<td id = "cuecard">			
+			<p><span id='playernameDisplay'></span></p>
+			<p><span id='headerDisplay'></span></p>
+			<p><span id='cultureDisplay'></span></p>
+		</td>
+		</tr>
+		</table>
+			
+		
+		
 		
 		
 <script type="text/javascript" src="builder.js"></script></body></html>
